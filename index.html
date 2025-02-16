@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <form id="myForm">
+          <h2 id="name">Grade Point Average Calculator</h1>
+          <div class="title">
+            <p>Courses</p>
+            <p>Grades</p>
+            <p>Credit Hours</p>
+          </div>
+          <div class="eachSub">
+            <p>course 1</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="eachSub">
+            <p>course 2</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="eachSub">
+            <p>course 3</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="eachSub">
+            <p>course 4</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="eachSub">
+            <p>course 5</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="eachSub">
+            <p>course 6</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="eachSub">
+            <p>course 7</p>
+            <input type="text" class="grade">
+            <input type="number" class="crh">
+          </div>
+          <div class="btn">
+            <button type="button" id="calc-btn" onclick="calcGrade()">CALCULATE</button>
+            <button id="reset-btn">RESET</button>
+          </div>
+          <h2>GPA = <span id="result">null</span></h2>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
