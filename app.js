@@ -22,7 +22,7 @@ function calcGrade() {
         gradeArr[i].toUpperCase() === "A" ||
         gradeArr[i].toUpperCase() === "A+"
       ) {
-        totalAddedGrade += 4 * Number(crhArr[i]);
+        totalAddedGrade += 4 * crhArr[i];
       } else if (gradeArr[i].toUpperCase() === "A-") {
         totalAddedGrade += 3.75 * crhArr[i];
       } else if (gradeArr[i].toUpperCase() === "B+") {
