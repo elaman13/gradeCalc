@@ -35,8 +35,12 @@ function calcGrade() {
         totalAddedGrade += 2.5 * crhArr[i];
       } else if (gradeArr[i].toUpperCase() === "C") {
         totalAddedGrade += 2 * crhArr[i];
+      } else if (gradeArr[i].toUpperCase() === "C-") {
+        totalAddedGrade += 1.75 * crhArr[i];
       } else if (gradeArr[i].toUpperCase() === "D") {
         totalAddedGrade += 1 * crhArr[i];
+      } else if (gradeArr[i].toUpperCase() === "F") {
+        totalAddedGrade += 0;
       }
 
       totalCrh += Number(crhArr[i]);
@@ -44,4 +48,27 @@ function calcGrade() {
   }
   let finalGrade = totalAddedGrade / totalCrh;
   document.getElementById("result").innerHTML = finalGrade.toFixed(2);
+  errorMsg("massage");
+}
+
+function resetInputs() {
+  document.getElementById("result").innerHTML = "0";
+}
+
+function errorMsg(txt) {
+  let errorBox = document.getElementsByClassName("top-section");
+  document.getElementsByClassName("error-msg")[0].innerHTML = txt;
+  errorBox[0].style.transition = "opacity 2s";
+  void errorBox[0].offsetWidth;
+  errorBox[0].style.opacity = 1;
+
+  setTimeout(() => {
+    errorBox[0].style.opacity = 0;
+  }, 5000);
+}
+
+function closeBox() {
+  let errorBox = document.getElementsByClassName("top-section");
+  errorBox[0].style.transition = "opacity 2s";
+  errorBox[0].style.opacity = 0;
 }

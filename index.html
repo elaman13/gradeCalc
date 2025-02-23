@@ -4,9 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Grade Calculate</title>
   </head>
   <body>
+    <div class="top-section">
+      <div class="error-box">
+        <span onclick="closeBox()" class="quit-btn material-symbols-outlined">
+          cancel
+          </span>
+        <p class="error-msg">
+         Input a valid number!
+        </p>
+      </div>
+    </div>
     <div id="container">
       <form id="myForm">
           <h2 id="name">Grade Point Average Calculator</h1>
@@ -52,7 +64,7 @@
           </div>
           <div class="btn">
             <button type="button" id="calc-btn" onclick="calcGrade()">CALCULATE</button>
-            <button id="reset-btn">RESET</button>
+            <button type="reset" id="reset-btn" onclick="resetInputs()">RESET</button>
           </div>
           <h2>GPA = <span id="result">null</span></h2>
         </form>
