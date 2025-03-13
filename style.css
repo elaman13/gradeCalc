@@ -96,9 +96,6 @@ h2 {
   body {
     background-color: #cfd8dd;
   }
-  #container {
-    border: 1px solid red;
-  }
 
   #calc-btn {
     width: 100%;
