@@ -40,6 +40,7 @@ body {
 .eachSub {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   margin-bottom: 15px;
 }
@@ -107,5 +108,12 @@ h2 {
     width: 100%;
     height: 40px;
     font-size: 1em;
+  }
+
+  select {
+    width: 80px;
+    height: 30px;
+    background-color: #cfd8dd;
+    border-radius: 8px;
   }
 }
